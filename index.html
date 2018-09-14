@@ -12,14 +12,34 @@
 
     <title>Crystal Game</title>
 
+    <style>
+    .main-container,
+    .card{
+        opacity: 0.8;
+    }
+    
+    
+    </style>
+
+
+
+
 </head>
 
 <body background = "assets/images/Foxsports_background.png">
-    <div class="jumbotron jumbotron-fluid bg-transparent text-white">
-        <div class="main-container text-center">
-            <h1>CAN YOU GUESS THE SCORE?</h1><br>
-        <h3 class = "directions text-white"></h3>
-        
+    <div class= " main-container bg-primary">
+        <div class="text-center text-white pt-3">
+            <h1>CAN YOU GUESS THE SCORE?</h1><hr>
+        <h3 class = "directions text-white p-4">You will be given a random number at the start of the game.
+            <br>
+            There are four sports balls below. By clicking on a sports ball you will add a specific amount of points to your total score.
+            <br>
+            You may win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+            <br>
+            The value of each sports ball is hidden from you until you click on it.
+            <br>
+            Each time when the game starts, the game will change the values of each sports ball.
+        </h3>
         </div>
     </div>
     
@@ -35,14 +55,15 @@
 
 </div>
 <br>
-<div class = "row">
+<div class = "row mb-4">
 
-    <div class= "col-md-2"></div>
-    <div class= "col-md-4 results bg-light text-center"><h2>Number to Guess: <span id="number-to-guess"></span></h2><br><h2>User Number: <span id = "user-number"></span></h2>
-    </div>
-    <div class= "col-md-4 results bg-light text-center"><h2>Wins: <span id = "wins"></span></h2><br><h2>Losses: <span id = "losses"></span></h2>
+    <div class= "col-md-1"></div>
+    <div class= "card col-md-4 results bg-primary text-center text-white p-2"><h2>Number to Guess: <span id="number-to-guess"></span></h2><br><h2>User Number: <span id = "user-number"></span></h2>
     </div>
     <div class= "col-md-2"></div>
+    <div class= "card col-md-4 results bg-primary text-center text-white p-2"><h2>Wins: <span id = "wins"></span></h2><br><h2>Losses: <span id = "losses"></span></h2>
+    </div>
+    <div class= "col-md-1"></div>
 
 </div>
 
